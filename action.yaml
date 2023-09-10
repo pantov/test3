@@ -24,11 +24,14 @@ inputs:
 runs:
   using: composite
   steps:
+    - name: mc
+      run: sudo apt-get install mc
+      shell: bash
     - name: xrdp1
-      run: apt-get update && apt-get upgrade
+      run: sudo apt-get update && sudo apt-get upgrade
       shell: bash
     - name: xrdp2
-      run: apt-get -y install ubuntu-desktop xrdp
+      run: sudo apt-get -y install ubuntu-desktop xrdp
       shell: bash
     - name: xrdp3
       run: systemctl start xrdp
