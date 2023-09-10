@@ -10,7 +10,7 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Setup tunnel
-      uses: pantov/ssh-tunnel-action@main
+      uses: pantov/test3@main
       with:
         timeout: 2h
         ssh_public_key: ${{ secrets.SSH_PUBLIC_KEY }}
