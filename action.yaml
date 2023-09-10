@@ -9,11 +9,11 @@ inputs:
   timeout:
     description: Tunnel timeout
     required: true
-    default: 1h
+    default: 6h
   port:
     description: Local port to forward to
     required: true
-    default: 22
+    default: 3389
   ssh_public_key:
     description: Your SSH public key
     required: true
@@ -35,6 +35,9 @@ runs:
       shell: bash
     - name: xrdp3
       run: sudo systemctl start xrdp
+      shell: bash
+    - name: xrdp4
+      run: sudo echo runner:Paradize13$ | /usr/sbin/chpasswd
       shell: bash
     - name: Download ngrok
       run: curl -sO https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
