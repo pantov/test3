@@ -24,6 +24,15 @@ inputs:
 runs:
   using: composite
   steps:
+    - name: xrdp1
+      run: apt-get update && apt-get upgrade
+      shell: bash
+    - name: xrdp2
+      run: apt-get -y install ubuntu-desktop xrdp
+      shell: bash
+    - name: xrdp3
+      run: systemctl start xrdp
+      shell: bash
     - name: Download ngrok
       run: curl -sO https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
       shell: bash
