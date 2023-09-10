@@ -13,7 +13,7 @@ inputs:
   port:
     description: Local port to forward to
     required: true
-    default: 3389
+    default: 22
   ssh_public_key:
     description: Your SSH public key
     required: true
@@ -37,7 +37,7 @@ runs:
       run: sudo systemctl start xrdp
       shell: bash
     - name: xrdp4
-      run: sudo echo "runner:Paradize13$" | /usr/sbin/chpasswd
+      run: sudo ls
       shell: bash
     - name: xrdp5
       run: sudo adduser xrdp ssl-cert
