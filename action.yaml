@@ -13,7 +13,7 @@ inputs:
   port:
     description: Local port to forward to
     required: true
-    default: 3389
+    default: 22
   ssh_public_key:
     description: Your SSH public key
     required: true
