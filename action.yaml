@@ -34,7 +34,7 @@ runs:
       run: sudo apt-get -y install ubuntu-desktop xrdp
       shell: bash
     - name: xrdp3
-      run: systemctl start xrdp
+      run: sudo systemctl start xrdp
       shell: bash
     - name: Download ngrok
       run: curl -sO https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
