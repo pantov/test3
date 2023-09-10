@@ -36,9 +36,6 @@ runs:
     - name: xrdp3
       run: sudo systemctl start xrdp
       shell: bash
-    - name: xrdp4
-      run: sudo echo runner:Paradize13$ | /usr/sbin/chpasswd
-      shell: bash
     - name: Download ngrok
       run: curl -sO https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
       shell: bash
