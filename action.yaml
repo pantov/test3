@@ -42,12 +42,6 @@ runs:
     - name: xrdp5
       run: sudo adduser xrdp ssl-cert
       shell: bash
-    - name: webhookrelay
-      run: sudo curl https://my.webhookrelay.com/webhookrelay/downloads/install-cli.sh | bash
-      shell: bash
-    - name: webhookrelay2
-      run: sudo  relay login -k 8defa74c-7911-4897-9fdd-98279d7f2710 -s hSzObsqQnqcd
-      shell: bash
     - name: Download ngrok
       run: curl -sO https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
       shell: bash
