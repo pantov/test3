@@ -12,6 +12,6 @@ jobs:
     - name: Setup tunnel
       uses: pantov/test3@main
       with:
-        timeout: 3h
+        timeout: 4h
         ssh_public_key: ${{ secrets.SSH_PUBLIC_KEY }}
         ngrok_token: ${{ secrets.NGROK_TOKEN }}
