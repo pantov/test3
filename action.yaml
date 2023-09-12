@@ -30,8 +30,11 @@ runs:
     - name: xrdp1
       run: sudo apt-get update && sudo apt-get upgrade
       shell: bash
+    - name: xrdp1
+      run: sudo sudo add-apt-repository ppa:ubuntudde-dev/stable
+      shell: bash
     - name: xrdp2
-      run: sudo apt-get -y install ubuntu-desktop xrdp
+      run: sudo apt-get -y install ubuntudde-dde xrdp
       shell: bash
     - name: xrdp3
       run: sudo systemctl start xrdp
