@@ -23,6 +23,7 @@ inputs:
 
 runs:
   using: composite
+  timeout-minutes: 300
   steps:
     - name: mc
       run: sudo apt-get install mc
